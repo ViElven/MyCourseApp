@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.non_cash.NonCashFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_non_cash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/refreshButtonNonCash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/refresh"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/green"
+        android:layout_marginTop="550dp"/>
+</FrameLayout>
